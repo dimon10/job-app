@@ -19,9 +19,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       
-      - name: Gradle build
-        run: ./gradlew build
+      # - name: Gradle build
+      #   run: ./gradlew build
 
       - name: Run a multi-line script
         run: |
+          pwd
           ls -R
